@@ -7,4 +7,4 @@ Se visualiza como hay trabajos (commits) en paralelo, por que se trabajó en mai
 ● En VSCode vuelva al “Source Control” vea los cambios, ¿Qué nota?
 se creó un nuevo commit donde se agregó lo trabajado en la rama opcion_2 a la rama principal Main
 
-
+fsdh
