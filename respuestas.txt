@@ -3,3 +3,8 @@ No porque esta en una rama diferente a donde estoy parado en este momento(main)
 
 ● En VSCode vuelva al “Source Control” ¿Qué diferencias nota?
 Se visualiza como hay trabajos (commits) en paralelo, por que se trabajó en main y previamente en una rama opcion_2
+
+● En VSCode vuelva al “Source Control” vea los cambios, ¿Qué nota?
+se creó un nuevo commit donde se agregó lo trabajado en la rama opcion_2 a la rama principal Main
+
+
