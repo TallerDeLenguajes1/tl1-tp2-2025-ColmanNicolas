@@ -33,7 +33,7 @@ void mostrarMasVieja(struct compu pcs[],int cantidad){
             indice = i;
         }            
     }
-    printf("\n\nPC mas vieja");
+    printf("\nPC mas vieja\n");
     listarPCs(&pcs[indice],1);
 }
 /*void listarPCs(struct compu pcs[],int cantidad){
@@ -56,6 +56,8 @@ int main()
     }
     
     listarPCs(stockCompu, 5);
+
+    mostrarMasVieja(stockCompu,5);
 
     return 0;
 }
