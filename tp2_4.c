@@ -13,7 +13,7 @@ typedef struct compu
 void listarPCs(struct compu pcs[],int cantidad){
     if (cantidad <= 0) return; 
     for(int i=0; i<cantidad;i++){
-        printf("Computadora n°: %d", i+1);
+        printf("Computadora n°: %d\n", i+1);
         printf("Velocidad: %d GHz\n", pcs[i].velocidad);
         printf("Año: %d\n", pcs[i].anio);
         printf("Núcleos: %d\n", pcs[i].cantidad_nucleos);
@@ -36,9 +36,21 @@ void mostrarMasVieja(struct compu pcs[],int cantidad){
     printf("\nPC mas vieja\n");
     listarPCs(&pcs[indice],1);
 }
-/*void listarPCs(struct compu pcs[],int cantidad){
-    
-}*/
+void mostrarMasVeloz(struct compu pcs[],int cantidad){
+    if(cantidad <= 0) return;
+
+    int indice = 0;
+    int velMin = pcs[0].velocidad;
+    for(int i = 1; i<cantidad; i++ ){
+        if (pcs[i].velocidad > velMin)
+        {
+            velMin = pcs[i].velocidad;
+            indice = i;
+        }            
+    }
+    printf("\nPC mas rapida\n");
+    listarPCs(&pcs[indice],1);
+}
 
 
 int main()
@@ -58,6 +70,8 @@ int main()
     listarPCs(stockCompu, 5);
 
     mostrarMasVieja(stockCompu,5);
+
+    mostrarMasVeloz(stockCompu,5);
 
     return 0;
 }
